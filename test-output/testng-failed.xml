@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="0" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Smoke Test Suite]">
+  <parameter name="testdataxml" value="src/main/resources/testdata/testdata.xml"/>
+  <test name="Cashkaro Tests(failed)">
+    <parameter name="testdataxml" value="src/main/resources/testdata/testdata.xml"/>
+    <classes>
+      <class name="com.cashkaro.uitests.tests.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="quitDriver"/>
+          <include name="createDriver"/>
+        </methods>
+      </class> <!-- com.cashkaro.uitests.tests.LoginTest -->
+      <class name="com.cashkaro.uitests.tests.JoinWithFBTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="createDriver"/>
+          <include name="setUp"/>
+          <include name="testJoinWithFB" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.cashkaro.uitests.tests.JoinWithFBTest -->
+      <class name="com.cashkaro.uitests.tests.ForgotPasswordTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="setUp"/>
+          <include name="createDriver"/>
+        </methods>
+      </class> <!-- com.cashkaro.uitests.tests.ForgotPasswordTest -->
+      <class name="com.cashkaro.uitests.tests.JoinWithEmailTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="quitDriver"/>
+          <include name="testJoinWithEmail" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="createDriver"/>
+        </methods>
+      </class> <!-- com.cashkaro.uitests.tests.JoinWithEmailTest -->
+    </classes>
+  </test> <!-- Cashkaro Tests(failed) -->
+</suite> <!-- Failed suite [Smoke Test Suite] -->

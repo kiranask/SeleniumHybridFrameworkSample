@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testdatasuite>
+
+	<testclass name="com.cashkaro.uitests.tests.JoinWithEmailTest">
+		<dataset>
+			<name>Tajmul</name>
+			<email>cashkaro.test1@gmail.com</email>
+			<password>test123</password>
+		</dataset>
+	</testclass>
+	
+	<testclass name="com.cashkaro.uitests.tests.JoinWithFBTest">
+		<dataset>
+			<email>cashkaro.test1@gmail.com</email>
+			<password>test123</password>
+		</dataset>
+	</testclass>
+	
+	<testclass name="com.cashkaro.uitests.tests.LoginTest">
+		<dataset>
+			<email>cashkaro.test1@gmail.com</email>
+			<password>test123</password>
+		</dataset>
+	</testclass>
+	
+	<testclass name="com.cashkaro.uitests.tests.ForgotPasswordTest">
+		<dataset>
+			<email>cashkaro.test1@gmail.com</email>
+			<password>test123</password>
+			<subject>Forgot Password</subject>
+		</dataset>
+	</testclass>
+
+</testdatasuite>

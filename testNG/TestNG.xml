@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke Test Suite" verbose="1" parallel="false" thread-count="0" configfailurepolicy="continue">
+
+	<test name="Cashkaro Tests">
+
+		<parameter name="testdataxml" value="src/main/resources/testdata/testdata.xml" />
+
+		<packages>
+			<package name="com.cashkaro.uitests.tests.*" />
+		</packages>
+
+	</test>
+
+</suite>
